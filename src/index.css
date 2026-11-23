@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #191827;
+  background: #f8f7fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #e9ddff; color: #4c1d95; }
+
+.preview-page {
+  width: 100%;
+  min-height: 1050px;
+  background: white;
+  color: #202033;
+  padding: 42px;
+  box-shadow: 0 12px 40px rgba(25, 20, 50, .09);
+  overflow-wrap: anywhere;
+}
+.preview-page h1 { font-size: 30px; line-height: 1.1; font-weight: 800; }
+.preview-page h2 { font-size: 11px; letter-spacing: .14em; font-weight: 800; margin: 22px 0 9px; text-transform: uppercase; }
+.preview-page p { font-size: 11px; line-height: 1.55; color: #515166; white-space: pre-line; }
+.preview-page .muted { color: #74748a; font-size: 10px; }
+.preview-page .entry-title { font-size: 12px; font-weight: 700; color: #24243a; }
+.preview-page .entry-subtitle { font-size: 10px; color: #68687d; margin-top: 2px; }
+.preview-page .section-line { border-bottom: 1px solid #e5e5ed; padding-bottom: 5px; }
+.preview-photo { width: 92px; height: 92px; object-fit: cover; border-radius: 50%; }
+@media print {
+  .preview-page { box-shadow: none; min-height: auto; }
+}
